@@ -17,7 +17,7 @@ app.get('/', (req, res, next) => {
     res.json('Welcome to our library management system');
 })
 
-app.get('*', (req, res, next) => {
+app.use('*', (req, res, next) => {
     res.json('404 page not found');
 })
 
